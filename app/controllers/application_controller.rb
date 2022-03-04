@@ -23,4 +23,14 @@ class ApplicationController < Sinatra::Base
     baked_good.to_json
   end
 
+  get '/baked_goods' do
+    bg=BakedGood.all
+    bg.to_json
+  end
+
+  post '/baked_goods' do
+
+  end
+
+
 end
